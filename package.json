@@ -1,0 +1,28 @@
+{
+  "name": "softwaresauna",
+  "version": "1.0.0",
+  "description": "Code challenge",
+  "keywords": [
+    "code challenge",
+    "code",
+    "challenge"
+  ],
+  "author": {
+    "name": "Marin Vitlov",
+    "email": "hello@marinvitlov.com",
+    "url": "https://marinvitlov.com"
+  },
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "scripts": {
+    "watch": "tsc -w",
+    "build": "rimraf ./dist/ && tsc",
+    "start": "npm run build && node dist/index.js",
+    "start:ts": "ts-node ./src/index.ts"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  }
+}
